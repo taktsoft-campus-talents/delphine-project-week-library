@@ -7,49 +7,57 @@
   flex-wrap: wrap;
   align-items: center;
   padding: 20px;
-
-  background-color: white; /* Background color of the container */
-  border-radius: 20px; /* Slightly reduced border radius for a cleaner appearance */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  color: black; /* Font color for text inside the container */
+  background-color: var(--primary-white);
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: black;
+  margin: 20px;
 }
 
 .authors-container h1 {
   font-size: var(--big-font);
-  color: var(--primary-color); /* Heading color */
-  margin-bottom: 1rem; /* Space below the heading */
+  color: var(--primary-black);
+  margin-bottom: 1rem;
 }
 
 .authors-list {
-  list-style-type: none; /* Remove default list styles */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 
-  /* Add styles for the list itself to create a box */
-  border: 1px solid var(--primary-light); /* Thinner border for the list */
-  background-color: #f9f9f9; /* Background color for the list */
-  border-radius: 8px;
   width: 100%;
   max-width: 500px;
-  padding: 10px;
   text-align: center;
 }
 
 .authors-list li {
-  padding: 0.5rem; /* Padding for list items */
-  font-size: var(--medium-font); /* Font size for list items */
-  color: black; /* Change list item text color to black */
-  border-bottom: 1px solid var(--primary-light); /* Border between list items */
+  padding: 2rem;
+  font-size: var(--medium-font);
+  color: black;
+  border: 1px solid black;
+  background-color: #fff;
+  margin: 1.5rem 0;
+  border-radius: 5px;
 }
 
 .authors-list li:last-child {
-  border-bottom: none; /* Remove border for the last item */
+  margin-bottom: 0;
 }
 
 .loading,
 .error {
-  text-align: center; /* Center text for loading/error messages */
-  font-size: var(--medium-font); /* Font size for messages */
-  color: var(--tertiary-color); /* Message color */
-  padding: 1rem; /* Padding around messages */
+  text-align: center;
+  font-size: var(--medium-font);
+  color: var(--tertiary-color);
+  padding: 1rem;
+}
+
+@media (max-width: 600px) {
+  .authors-container {
+    padding: 10px;
+  }
+
+  .authors-list {
+    max-width: 90%;
+  }
 }
