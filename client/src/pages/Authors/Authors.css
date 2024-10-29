@@ -6,9 +6,9 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
   background-color: var(--primary-white);
-  border-radius: 20px;
+  border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: black;
   margin: 20px;
@@ -31,10 +31,10 @@
 }
 
 .authors-list li {
-  padding: 2rem;
+  padding: 1.5rem;
   font-size: var(--medium-font);
   color: black;
-  border: 1px solid black;
+  border: 1px solid #ccc;
   background-color: #fff;
   margin: 1.5rem 0;
   border-radius: 5px;
